@@ -4,7 +4,7 @@ body {
     padding: 0;
     max-width: 30rem;
     color: #eee;
-    position: relative
+    position: relative;
 }
 
 p {
@@ -116,11 +116,17 @@ header {
     grid-column: 1;
     grid-row: 1;
     width: 100%;
-    height: 20rem;
+    height: auto;
     -o-object-position: top center;
     object-position: top center;
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.headerImgC:hover #cover {
+    transform: scale(1.3); /* Scale image by 1.5x on hover */
+    transform-origin: center; /* Set zoom center point */
 }
 
 #logo {
